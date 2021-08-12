@@ -14,9 +14,9 @@
 // just contact techsupport@e-radionica.com
 //==============================================================================
 
-#include <SHT21.h>
+#include <SHT21_TTGO.h>
 
-SHT21 sht;
+SHT21_TTGO sht;
 
 void setup() {
   Wire.begin();		// begin Wire
