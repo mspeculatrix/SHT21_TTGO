@@ -1,12 +1,14 @@
 # SHT21 Arduino Library
 
+Machina Speculatrix
+
+https:
 ## NOTE:
 Based on the original SHT21 library by e-radionica.com.
 
-Modified so that we can pass in a TwoWire instance, in order to work with
-devices, like the TTGO ESP32 boards, that have unusual I2C pin assignments.
+Modified so that we can pass in a TwoWire instance, which has been created with non-standard SDA and SCL pins, on instantiation. This allows the library to work with devices, like the TTGO ESP32 boards, that have unusual I2C pin assignments.
 
-## Original info:
+## ORIGINAL:
 
 ### Description and details
 Arduino library for interfacing [SHT21][breakout]  temperature and humidity sensor over I2C to Arduino. Simple to use, it enables reading temperature and humidity from the chip. Additionally, it uses checksum to check if data arrived from SHT21 is correctly transmitted. 
