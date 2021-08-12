@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-SHT21	KEYWORD1
+SHT21_TTGO	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
