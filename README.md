@@ -2,6 +2,10 @@
 
 Machina Speculatrix :: https://mansfield-devine.com/speculatrix
 
+The unfortunately named SHT21 is actually a very good temperature and humidity sensor.
+
+This library supports a GY-21 (SHT21/HTU21) I2C temperature & humidity sensor module.
+
 ## NOTE:
 Based on the original SHT21 library by e-radionica.com.
 
