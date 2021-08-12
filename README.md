@@ -1,7 +1,7 @@
 # SHT21_TTGO
-Machina Speculatrix
 
-https:
+Machina Speculatrix :: https://mansfield-devine.com/speculatrix
+
 ## NOTE:
 Based on the original SHT21 library by e-radionica.com.
 
