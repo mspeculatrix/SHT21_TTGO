@@ -27,7 +27,7 @@ float temp; 	// variable to store temperature
 float humidity; // variable to store hemidity
 
 void setup() {
-  twi.begin(SDA,SCL);		// begin I2C
+  twi.begin(SDA,SCL);	// begin I2C
   Serial.begin(9600);   // begin Serial
 }
 
