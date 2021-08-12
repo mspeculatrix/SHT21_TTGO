@@ -1,3 +1,4 @@
+// Modified version of original by:
 //==============================================================================
 //    E - R A D I O N I C A . C O M,  H.Kolomana 6/A, Djakovo 31400, Croatia
 //==============================================================================
@@ -14,16 +15,20 @@
 // just contact techsupport@e-radionica.com
 //==============================================================================
 
+#define SDA 4       // Pin for I2C SDA
+#define SCL 15      // Pin for I2C SCL          
+
 #include <SHT21_TTGO.h>  // include SHT21 library
 
-SHT21_TTGO sht; 
+TwoWire twi = TwoWire(1);
+SHT21_TTGO sht = SHT21_TTGO(&twi);
 
 float temp; 	// variable to store temperature
 float humidity; // variable to store hemidity
 
 void setup() {
-  Wire.begin();		// begin Wire(I2C)
-  Serial.begin(9600); // begin Serial
+  twi.begin(SDA,SCL);		// begin I2C
+  Serial.begin(9600);   // begin Serial
 }
 
 void loop() {

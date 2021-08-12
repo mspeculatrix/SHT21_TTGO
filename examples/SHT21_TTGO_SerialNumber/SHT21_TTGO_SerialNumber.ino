@@ -1,3 +1,4 @@
+// Modified version of original by:
 //==============================================================================
 //    E - R A D I O N I C A . C O M,  H.Kolomana 6/A, Djakovo 31400, Croatia
 //==============================================================================
@@ -14,13 +15,17 @@
 // just contact techsupport@e-radionica.com
 //==============================================================================
 
+#define SDA 4       // Pin for I2C SDA
+#define SCL 15      // Pin for I2C SCL          
+
 #include <SHT21_TTGO.h>
 
-SHT21_TTGO sht;
+TwoWire twi = TwoWire(1);
+SHT21_TTGO sht = SHT21_TTGO(&twi);
 
 void setup() {
-  Wire.begin();		// begin Wire
-  Serial.begin(9600); // begin Serial
+  twi.begin(SDA,SCL);    // begin I2C
+  Serial.begin(9600);    // begin Serial
 
   // call following as argument in getSerialNumber function to print SN
   //		0 - for SNC_0
